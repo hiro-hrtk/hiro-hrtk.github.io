@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — gcal</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="lead">gcal（Google カレンダー操作ツール）における利用者情報の取り扱いについて。</p>
+
+  <h2>1. このツールの性質</h2>
+  <p>
+    gcal は利用者自身のパソコン上で動作するコマンドラインツールです。開発者が運営する
+    サーバーは存在せず、利用者のデータが開発者に送信されることはありません。
+    通信は、利用者のパソコンと Google のサーバー（Google Calendar API および
+    OAuth 認証エンドポイント）との間でのみ発生します。
+  </p>
+
+  <h2>2. 取り扱う情報</h2>
+  <p>利用者が認証を行った Google アカウントについて、次の情報を取り扱います。</p>
+  <ul>
+    <li><strong>認証情報</strong> — Google から発行されるアクセストークンおよびリフレッシュトークン</li>
+    <li><strong>カレンダー情報</strong> — 予定のタイトル、日時、場所、説明、参加者のメールアドレス、
+      出欠状況、カレンダーの名称と識別子</li>
+  </ul>
+  <p>
+    氏名・住所・電話番号・支払い情報などを別途収集することはありません。
+    アクセス解析や利用統計の収集も行いません。
+  </p>
+
+  <h2>3. 利用目的</h2>
+  <p>
+    取得した情報は、利用者がその場で指示した操作（予定の閲覧・検索・作成・更新・削除）を
+    実行し、その結果を利用者の画面に表示するためにのみ使用します。
+    広告、プロファイリング、機械学習モデルの学習には一切使用しません。
+  </p>
+
+  <h2>4. 保存と保管</h2>
+  <ul>
+    <li><strong>認証情報</strong>は、利用者のパソコン内（既定では
+      <code>~/.config/gcal-skill/token.json</code>）に、本人のみが読み書きできる
+      権限で保存されます。</li>
+    <li><strong>カレンダーの内容</strong>は保存しません。操作のたびに Google から取得し、
+      画面に表示した後は破棄します。利用者が自らの操作で出力結果をファイルに保存した場合、
+      そのファイルは利用者自身の管理下に置かれます。</li>
+  </ul>
+
+  <h2>5. 第三者への提供</h2>
+  <p>
+    取得した情報を第三者へ提供・販売することはありません。開発者もアクセスできません。
+  </p>
+  <p>
+    ただし、<strong>AI アシスタント経由で利用する場合は例外があります。</strong>
+    本ツールは AI アシスタントから呼び出して使うことができますが、その構成では、
+    利用者の依頼内容と本ツールの実行結果（すなわち予定の内容）が、
+    そのアシスタントが利用する AI サービス提供者に送信されます。送信先と取り扱いは、
+    利用者自身が選択・設定したアシスタントおよび AI サービス提供者の規約に従います。
+    この連携を使うかどうかは利用者が決定します。
+  </p>
+
+  <h2>6. アクセス権限の取り消しとデータの削除</h2>
+  <p>次のいずれによっても、本ツールからカレンダーへのアクセスを停止できます。</p>
+  <ul>
+    <li>Google アカウントの
+      <a href="https://myaccount.google.com/connections">サードパーティ製のアプリとサービス</a>
+      から、本ツールのアクセス権を取り消す</li>
+    <li>パソコン上の認証情報ファイル（<code>~/.config/gcal-skill/token.json</code>）を削除する</li>
+  </ul>
+  <p>
+    カレンダーの内容自体は Google 側に保存されているものであり、本ツールを削除しても
+    予定が失われることはありません。
+  </p>
+
+  <h2>7. Google ユーザーデータの取り扱い</h2>
+  <p>
+    本ツールによる Google API から取得した情報の使用および他者への移転は、
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>
+    （限定的使用の要件を含む）に準拠します。
+  </p>
+  <p class="en">
+    gcal's use and transfer of information received from Google APIs to any other app
+    will adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.
+  </p>
+
+  <h2>8. 本ポリシーの変更</h2>
+  <p>
+    内容を変更した場合は、このページを更新し、末尾の最終更新日を改めます。
+  </p>
+
+  <h2>9. 連絡先</h2>
+  <p>
+    本ポリシーに関する問い合わせは
+    <a href="mailto:gfuturealhrtk@gmail.com">gfuturealhrtk@gmail.com</a>
+    または <a href="https://github.com/hiro-hrtk">GitHub</a> まで。
+  </p>
+
+  <p class="meta">
+    最終更新: 2026年9月23日 ·
+    <a href="/gcal/">gcal について</a> ·
+    <a href="/">トップ</a>
+  </p>
+</main>
+</body>
+</html>

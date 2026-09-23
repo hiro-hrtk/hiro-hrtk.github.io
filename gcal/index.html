@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gcal — Google カレンダー操作ツール</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <h1>gcal</h1>
+  <p class="lead">自分の Google カレンダーを、コマンドラインと AI アシスタントから読み書きするための個人用ツールです。</p>
+
+  <h2>何をするツールか</h2>
+  <p>
+    利用者自身のパソコン上で動くコマンドラインツールです。Google Calendar API を通じて、
+    利用者本人の Google カレンダーに対して次の操作を行います。
+  </p>
+  <ul>
+    <li>予定の閲覧・検索（期間やキーワードの指定）</li>
+    <li>予定の新規作成</li>
+    <li>予定の更新（日時・タイトル・場所などの変更）</li>
+    <li>予定の削除</li>
+    <li>アクセスできるカレンダーの一覧表示</li>
+  </ul>
+  <p>
+    あわせて、AI アシスタント（OpenClaw）から呼び出すための定義ファイルを同梱しています。
+    「今日の予定は？」「明日15時から打ち合わせを入れて」といった依頼を、このツールの
+    コマンド実行に変換して処理するためのものです。
+  </p>
+
+  <h2>作者以外も使えるのか</h2>
+  <p>
+    作者個人の利用を目的に作ったツールですが、ソースコードを読んで自分の環境に
+    セットアップすれば誰でも利用できます。その場合、接続先は各自の Google アカウントに
+    なります。サービスとして提供しているものではなく、利用者のパソコン上で動作する
+    プログラムです。
+  </p>
+
+  <h2>扱うデータ</h2>
+  <p>
+    カレンダーの予定情報を取り扱います。取得した情報は利用者自身の画面に表示するためだけに使い、
+    外部のサーバーへ送信することはありません。詳細は
+    <a href="/gcal/privacy.html">プライバシーポリシー</a>に記載しています。
+  </p>
+
+  <h2>連絡先</h2>
+  <p>
+    不具合の報告や問い合わせは
+    <a href="https://github.com/hiro-hrtk">GitHub</a>
+    または <a href="mailto:gfuturealhrtk@gmail.com">gfuturealhrtk@gmail.com</a> まで。
+  </p>
+
+  <p class="meta">
+    最終更新: 2026年9月23日 ·
+    <a href="/gcal/privacy.html">プライバシーポリシー</a> ·
+    <a href="/">トップ</a>
+  </p>
+</main>
+</body>
+</html>
